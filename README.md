@@ -82,46 +82,12 @@ caffeBaDjua/
 
 ---
 
-## 🌐 Panduan Mengupload ke GitHub & Mengonlinekan Website (GitHub Pages)
+## 🌐 Tautan Resmi Repositori & Website Online
 
-Agar tugas Anda memenuhi syarat **"Website sudah online"** dan **"Upload menggunakan terhubung ke github"**, ikuti langkah mudah berikut:
+- **URL Repositori GitHub:** [https://github.com/vaniaveronica0301-bot/caffeBaDjua](https://github.com/vaniaveronica0301-bot/caffeBaDjua)
+- **URL Website Resmi (GitHub Pages):** [https://vaniaveronica0301-bot.github.io/caffeBaDjua/](https://vaniaveronica0301-bot.github.io/caffeBaDjua/)
 
-### Langkah 1: Buat Repositori Baru di GitHub
-1. Buka [GitHub.com](https://github.com/) dan login ke akun Anda.
-2. Klik tombol **New** (atau ikon **+** di pojok kanan atas) -> pilih **New repository**.
-3. Beri nama repository, misalnya: `caffeBaDjua`.
-4. Pilih opsi **Public** (agar bisa diakses oleh dosen dan dipublikasikan via GitHub Pages).
-5. Jangan centang "Initialize this repository with a README" (karena kita sudah membuat README).
-6. Klik **Create repository**.
-
-### Langkah 2: Hubungkan Folder Lokal ke GitHub
-Buka terminal (PowerShell atau Git Bash) di folder `c:\caffeBaDjua` dan jalankan perintah berikut:
-
-```bash
-# Inisialisasi Git lokal (sudah disiapkan):
-git init
-git add .
-git commit -m "Initial release: Coffee by BaDjua Website with HTML & jQuery"
-
-# Ganti URL di bawah dengan URL repositori GitHub Anda:
-git branch -M main
-git remote add origin https://github.com/USERNAME-ANDA/caffeBaDjua.git
-git push -u origin main
-```
-
-*(Ganti `USERNAME-ANDA` dengan username akun GitHub Anda)*.
-
-### Langkah 3: Mengaktifkan GitHub Pages (Website Online Gratis!)
-1. Di halaman repositori GitHub Anda, klik menu **Settings** (ikon roda gigi di tab atas).
-2. Di sidebar sebelah kiri, klik menu **Pages**.
-3. Pada bagian **Branch**:
-   - Pilih dropdown branch: **main**
-   - Folder: **/ (root)**
-4. Klik tombol **Save**.
-5. Tunggu sekitar 1 - 2 menit, GitHub akan menampilkan pesan:
-   > *"Your site is live at `https://USERNAME-ANDA.github.io/caffeBaDjua/`"*
-
-🎉 **Selesai! Website Coffee by BaDjua Anda sekarang sudah resmi ONLINE di internet dan dapat langsung diakses oleh dosen melalui link tersebut.**
+Website ini sudah aktif secara online dan dapat diakses langsung oleh siapa saja, termasuk dosen pengampu, dari browser mana pun tanpa konfigurasi tambahan!
 
 ---
 
