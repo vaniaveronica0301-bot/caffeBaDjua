@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website Resmi & Katalog Digital Coffee by BaDjua - Nikmati aneka sajian kopi autentik, minuman segar, dan hidangan lezat dengan harga terjangkau.">
+  <meta name="author" content="Tim Tugas Pemrograman Web">
+  <title>Coffee by BaDjua - Rasa Autentik & Suasana Hangat</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT BAR
+       ========================================== -->
+  <div class="top-announcement">
+    <div class="container">
+      <div class="top-info">
+        <span><i class="fas fa-clock"></i> Buka Setiap Hari: <strong>09.00 - 23.00</strong> (Close Order 22.30)</span>
+        <span><i class="fab fa-instagram"></i> <a href="https://instagram.com/badjuacoffee" target="_blank" rel="noopener">@badjuacoffee</a></span>
+      </div>
+      <div>
+        <span class="top-badge"><i class="fas fa-circle" style="font-size: 8px; color: #76ff03; margin-right: 4px;"></i> Kedai Buka</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       NAVBAR UTAMA (RESPONSIF & JQUERY ACTIVE)
+       ========================================== -->
+  <nav class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon">
+          <i class="fas fa-mug-hot"></i>
+        </div>
+        <div class="brand-text">
+          <h1>Coffee by BaDjua</h1>
+          <span>Artisan Coffee & Kitchen</span>
+        </div>
+      </a>
+
+      <!-- Menu Navigasi Desktop & Mobile -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active">Beranda</a></li>
+        <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="#menu" class="nav-link">Menu & Harga</a></li>
+        <li><a href="#dokumentasi" class="nav-link">Dokumentasi UMKM</a></li>
+        <li><a href="#testimoni" class="nav-link">Ulasan</a></li>
+        <li><a href="#kontak" class="nav-link">Lokasi</a></li>
+      </ul>
+
+      <!-- Tombol Aksi Keranjang & Hamburger -->
+      <div class="nav-actions">
+        <button class="cart-toggle-btn" id="cartToggleBtn" title="Lihat Keranjang Pesanan">
+          <i class="fas fa-shopping-bag"></i>
+          <span>Pesanan</span>
+          <span class="cart-count-badge">0</span>
+        </button>
+        <button class="menu-mobile-btn" id="mobileMenuToggle" aria-label="Toggle Mobile Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <header class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-award"></i> Pilihan Nongkrong & Nugas Favorit
+        </div>
+        <h1>Nikmati Kopi Autentik & <span>Suasana Hangat</span></h1>
+        <p>
+          Selamat datang di <strong>Coffee by BaDjua</strong>. Kami menyajikan racikan biji kopi pilihan dengan cita rasa khas yang konsisten, dipadukan beragam kudapan dan makanan lezat dengan harga ramah mahasiswa.
+        </p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn btn-primary">
+            <i class="fas fa-book-open"></i> Buka Menu Lengkap
+          </a>
+          <button class="btn btn-outline" id="btnHeroOrder">
+            <i class="fab fa-whatsapp"></i> Pesan Cepat via WA
+          </button>
+          <a href="#dokumentasi" class="btn btn-outline" style="border-style: dashed;">
+            <i class="fas fa-id-badge"></i> Bukti Wawancara UMKM
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-main-card">
+          <img src="assets/images/latte-art.jpg" alt="Artisan Latte Coffee by BaDjua">
+        </div>
+        <div class="hero-float-card">
+          <div class="float-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="float-info">
+            <h4>Signature BaDjua Coffee</h4>
+            <p>Racikan kopi andalan hanya Rp 20.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       STATS BAR
+       ========================================== -->
+  <section class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <h3>28+</h3>
+        <p>Varian Minuman & Makanan</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Biji Kopi Asli Berkualitas</p>
+      </div>
+      <div class="stat-item">
+        <h3>09:00 - 23:00</h3>
+        <p>Jam Operasional Setiap Hari</p>
+      </div>
+      <div class="stat-item">
+        <h3>4.9 / 5.0</h3>
+        <p>Rating Kepuasan Pengunjung</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TENTANG KAMI SECTION
+       ========================================== -->
+  <section class="section-padding" id="tentang">
+    <div class="container about-grid">
+      <div class="about-img-box">
+        <img src="assets/images/latte-art.jpg" alt="Tentang Coffee by BaDjua">
+      </div>
+
+      <div class="about-content">
+        <span class="section-subtitle">Mengenal Lebih Dekat</span>
+        <h2 class="section-title">Cerita & Komitmen di Balik Coffee by BaDjua</h2>
+        <p class="section-desc">
+          <strong>Coffee by BaDjua</strong> hadir berawal dari kecintaan terhadap budaya ngopi dan kebutuhan ruang berinteraksi yang nyaman bagi mahasiswa, pekerja lepas, dan komunitas lokal.
+        </p>
+
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Biji Kopi Pilihan Berkualitas</h4>
+              <p>Menggunakan roasted beans pilihan dengan profil rasa seimbang antara acidity, aroma karamel, dan body yang mantap.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Suasana Nyaman untuk Diskusi & Tugas</h4>
+              <p>Dilengkapi colokan listrik, koneksi internet stabil, playlist lagu tenang, dan tempat duduk yang ergonomis.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Harga Bersahabat untuk Mahasiswa</h4>
+              <p>Menyajikan menu berkualitas tinggi seperti Nasi Anak Kos, Kopi Susu BaDjua, hingga camilan mulai dari Rp 10.000-an.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MENU INTERAKTIF SECTION (JQUERY POWERED)
+       ========================================== -->
+  <section class="section-padding menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Daftar Sajian Kami</span>
+        <h2 class="section-title">Pilihan Menu Coffee by BaDjua</h2>
+        <p class="section-desc">Gunakan fitur pencarian langsung atau pilih kategori menu di bawah ini untuk melihat daftar harga dan langsung menambahkannya ke keranjang pesanan.</p>
+      </div>
+
+      <!-- Controls: Pencarian & Filter Kategori (jQuery) -->
+      <div class="menu-controls">
+        <div class="search-box-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="menuSearchInput" class="search-input" placeholder="Cari nama menu (cth: Badjua, Brown Sugar, Nasi Goreng)...">
+          <i class="fas fa-times search-clear" id="searchClearBtn" title="Bersihkan pencarian"></i>
+        </div>
+
+        <div class="filter-categories" id="filterCategories">
+          <button class="filter-btn active" data-filter="all"><i class="fas fa-th-large"></i> Semua Menu</button>
+          <button class="filter-btn" data-filter="signature"><i class="fas fa-crown"></i> Signature</button>
+          <button class="filter-btn" data-filter="coffee"><i class="fas fa-coffee"></i> Coffee</button>
+          <button class="filter-btn" data-filter="non-coffee"><i class="fas fa-glass-whiskey"></i> Non Coffee</button>
+          <button class="filter-btn" data-filter="snacks"><i class="fas fa-cookie-bite"></i> Snacks</button>
+          <button class="filter-btn" data-filter="food"><i class="fas fa-utensils"></i> Food</button>
+        </div>
+      </div>
+
+      <!-- Grid Item Menu -->
+      <div class="menu-grid" id="menuGridContainer">
+
+        <!-- ===== SIGNATURE ===== -->
+        <div class="menu-item-card" data-category="signature">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag item-badge-signature"><i class="fas fa-crown"></i> Signature</span>
+              <span class="item-category-tag item-badge-popular">Favorit</span>
+            </div>
+            <h3 class="item-name">Badjua Coffee</h3>
+            <p class="item-desc">Racikan kopi andalan BaDjua dengan susu creamy istimewa dan sentuhan manis seimbang.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced</span>
+                <span class="price-val">Rp 20.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order btn-signature" data-id="sig-badjua-coffee" data-name="Badjua Coffee" data-price="20000" data-variant="Iced">
+              <i class="fas fa-cart-plus"></i> + Pesan (Iced)
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="signature">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag item-badge-signature"><i class="fas fa-crown"></i> Signature</span>
+            </div>
+            <h3 class="item-name">Badjua Presso</h3>
+            <p class="item-desc">Espresso murni berani dan pekat yang diracik khusus untuk penikmat kopi sejati.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-fire"></i> Hot</span>
+                <span class="price-val">Rp 25.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order btn-signature" data-id="sig-badjua-presso" data-name="Badjua Presso" data-price="25000" data-variant="Hot">
+              <i class="fas fa-cart-plus"></i> + Pesan (Hot)
+            </button>
+          </div>
+        </div>
+
+        <!-- ===== COFFEE ===== -->
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Brown Sugar Coffee</h3>
+            <p class="item-desc">Kombinasi klasik kopi espresso, susu segar, dan gula aren asli yang legit.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-fire"></i> Hot</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced</span>
+                <span class="price-val">Rp 20.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-brown-hot" data-name="Brown Sugar Coffee" data-price="15000" data-variant="Hot">
+              + Hot
+            </button>
+            <button class="btn-add-order" data-id="cof-brown-iced" data-name="Brown Sugar Coffee" data-price="20000" data-variant="Iced">
+              + Iced
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Americano</h3>
+            <p class="item-desc">Ekstraksi espresso murni berpadu air mineral segar, tanpa gula.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-fire"></i> Hot</span>
+                <span class="price-val">Rp 12.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced</span>
+                <span class="price-val">Rp 13.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-ame-hot" data-name="Americano" data-price="12000" data-variant="Hot">+ Hot</button>
+            <button class="btn-add-order" data-id="cof-ame-iced" data-name="Americano" data-price="13000" data-variant="Iced">+ Iced</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Coffee Milk</h3>
+            <p class="item-desc">Kopi susu nikmat dan creamy, pas dinikmati di sela mengerjakan tugas.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-fire"></i> Hot</span>
+                <span class="price-val">Rp 13.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced</span>
+                <span class="price-val">Rp 17.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-milk-hot" data-name="Coffee Milk" data-price="13000" data-variant="Hot">+ Hot</button>
+            <button class="btn-add-order" data-id="cof-milk-iced" data-name="Coffee Milk" data-price="17000" data-variant="Iced">+ Iced</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Coffee Milk Float</h3>
+            <p class="item-desc">Kopi susu dingin dipadukan topping 1 scoop es krim vanila lezat di atasnya.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced</span>
+                <span class="price-val">Rp 23.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-float" data-name="Coffee Milk Float" data-price="23000" data-variant="Iced">
+              <i class="fas fa-cart-plus"></i> + Pesan (Iced)
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Affogato</h3>
+            <p class="item-desc">Satu scoop es krim vanila lembut yang disiram espresso panas pekat.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced / Float</span>
+                <span class="price-val">Rp 20.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-affogato" data-name="Affogato" data-price="20000" data-variant="Iced">
+              <i class="fas fa-cart-plus"></i> + Pesan
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Vietnam Drip</h3>
+            <p class="item-desc">Seduhan tetes tradisional khas Vietnam dipadukan manisnya susu kental.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-fire"></i> Hot</span>
+                <span class="price-val">Rp 13.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Iced</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-vdrip-hot" data-name="Vietnam Drip" data-price="13000" data-variant="Hot">+ Hot</button>
+            <button class="btn-add-order" data-id="cof-vdrip-iced" data-name="Vietnam Drip" data-price="15000" data-variant="Iced">+ Iced</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Coffee</span>
+            </div>
+            <h3 class="item-name">Black Coffee & Espresso</h3>
+            <p class="item-desc">Kopi hitam klasik seduh hangat atau single shot espresso pekat.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Black Coffee (Hot)</span>
+                <span class="price-val">Rp 12.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Espresso (Hot)</span>
+                <span class="price-val">Rp 10.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="cof-black" data-name="Black Coffee" data-price="12000" data-variant="Hot">+ Black (12K)</button>
+            <button class="btn-add-order" data-id="cof-espresso" data-name="Espresso" data-price="10000" data-variant="Hot">+ Presso (10K)</button>
+          </div>
+        </div>
+
+        <!-- ===== NON COFFEE ===== -->
+        <div class="menu-item-card" data-category="non-coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Non Coffee</span>
+            </div>
+            <h3 class="item-name">Chocolate & Dark Milo</h3>
+            <p class="item-desc">Minuman cokelat premium pekat atau sensasi ekstra malt Dark Milo.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Chocolate (Hot/Iced)</span>
+                <span class="price-val">22K / 25K</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Dark Milo (Hot/Iced)</span>
+                <span class="price-val">23K / 25K</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="nc-choco-iced" data-name="Chocolate Iced" data-price="25000" data-variant="Iced">+ Choco Iced</button>
+            <button class="btn-add-order" data-id="nc-darkmilo-iced" data-name="Dark Milo Iced" data-price="25000" data-variant="Iced">+ Dark Milo</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="non-coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Non Coffee</span>
+            </div>
+            <h3 class="item-name">Green Tea & Thai Tea</h3>
+            <p class="item-desc">Matcha teh hijau autentik atau teh khas Thailand dengan susu gurih.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Green Tea (Hot/Iced)</span>
+                <span class="price-val">16K / 18K</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Thai Tea (Hot/Iced)</span>
+                <span class="price-val">15K / 16K</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="nc-greentea-iced" data-name="Green Tea" data-price="18000" data-variant="Iced">+ Green Tea</button>
+            <button class="btn-add-order" data-id="nc-thaitea-iced" data-name="Thai Tea" data-price="16000" data-variant="Iced">+ Thai Tea</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="non-coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Non Coffee</span>
+            </div>
+            <h3 class="item-name">Taro, Vanila, Pandan</h3>
+            <p class="item-desc">Varian manis segar dengan rasa ubi ungu manis, vanilla creamy, atau wangi pandan.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label"><i class="fas fa-snowflake"></i> Varian Dingin (Iced)</span>
+                <span class="price-val">Rp 16.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="nc-taro" data-name="Taro Iced" data-price="16000" data-variant="Iced">+ Taro</button>
+            <button class="btn-add-order" data-id="nc-pandan" data-name="Pandan Iced" data-price="16000" data-variant="Iced">+ Pandan</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="non-coffee">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Non Coffee</span>
+            </div>
+            <h3 class="item-name">Lemon Tea & Milo Tea</h3>
+            <p class="item-desc">Kesegaran lemon alami atau perpaduan teh segar dengan manis cokelat Milo.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Lemon Tea (Hot/Iced)</span>
+                <span class="price-val">15K / 16K</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Milo Tea (Iced)</span>
+                <span class="price-val">Rp 23.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="nc-lemontea" data-name="Lemon Tea Iced" data-price="16000" data-variant="Iced">+ Lemon Tea</button>
+            <button class="btn-add-order" data-id="nc-milotea" data-name="Milo Tea Iced" data-price="23000" data-variant="Iced">+ Milo Tea</button>
+          </div>
+        </div>
+
+        <!-- ===== SNACKS ===== -->
+        <div class="menu-item-card" data-category="snacks">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Snacks</span>
+              <span class="item-category-tag item-badge-popular">Favorit</span>
+            </div>
+            <h3 class="item-name">Pisang Nugget Cokelat Keju</h3>
+            <p class="item-desc">Pisang nugget renyah dengan baluran keju melimpah dan lelehan cokelat manis nikmat.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Porsi Puas</span>
+                <span class="price-val">Rp 17.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="snk-pisang-cokelat-keju" data-name="Pisang Nugget Cokelat Keju" data-price="17000" data-variant="Porsi">
+              <i class="fas fa-cart-plus"></i> + Pesan (17K)
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="snacks">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Snacks</span>
+            </div>
+            <h3 class="item-name">Pisang Nugget (Keju / Cokelat)</h3>
+            <p class="item-desc">Pisang nugget renyah khas BaDjua dengan topping single: Keju parut atau Saus Cokelat.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Pilihan Topping</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="snk-pisang-keju" data-name="Pisang Nugget Keju" data-price="15000" data-variant="Keju">+ Keju</button>
+            <button class="btn-add-order" data-id="snk-pisang-cokelat" data-name="Pisang Nugget Cokelat" data-price="15000" data-variant="Cokelat">+ Cokelat</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="snacks">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Snacks</span>
+            </div>
+            <h3 class="item-name">Kentang Goreng & Keripik</h3>
+            <p class="item-desc">French fries renyah bertabur bumbu gurih lezat atau keripik renyah teman santai.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Kentang Goreng</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Keripik Gurih</span>
+                <span class="price-val">Rp 12.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="snk-kentang" data-name="Kentang Goreng" data-price="15000" data-variant="Porsi">+ Kentang (15K)</button>
+            <button class="btn-add-order" data-id="snk-keripik" data-name="Keripik" data-price="12000" data-variant="Porsi">+ Keripik (12K)</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="snacks">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Snacks</span>
+            </div>
+            <h3 class="item-name">Ice Bowl Vanila</h3>
+            <p class="item-desc">Semangkuk es krim vanila dingin lembut menyegarkan tenggorokan di hari terik.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">1 Bowl Penuh</span>
+                <span class="price-val">Rp 20.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="snk-icebowl" data-name="Ice Bowl Vanila" data-price="20000" data-variant="Bowl">
+              <i class="fas fa-cart-plus"></i> + Pesan (20K)
+            </button>
+          </div>
+        </div>
+
+        <!-- ===== FOOD ===== -->
+        <div class="menu-item-card" data-category="food">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Food</span>
+              <span class="item-category-tag item-badge-signature">Spesial</span>
+            </div>
+            <h3 class="item-name">Nasi Goreng Badjua</h3>
+            <p class="item-desc">Nasi goreng racikan resep istimewa BaDjua dengan bumbu rempah harum dan lauk lengkap.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Porsi Spesial</span>
+                <span class="price-val">Rp 22.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order btn-signature" data-id="fd-nasgor-badjua" data-name="Nasi Goreng Badjua" data-price="22000" data-variant="Porsi">
+              <i class="fas fa-cart-plus"></i> + Pesan (22K)
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="food">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Food</span>
+              <span class="item-category-tag item-badge-popular">Hemat</span>
+            </div>
+            <h3 class="item-name">Nasi Anak Kos</h3>
+            <p class="item-desc">Menu andalan penolong mahasiswa di akhir bulan dengan rasa lezat dan mengenyangkan.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Porsi Kenyang</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="fd-nasi-kos" data-name="Nasi Anak Kos" data-price="15000" data-variant="Porsi">
+              <i class="fas fa-cart-plus"></i> + Pesan (15K)
+            </button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="food">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Food</span>
+            </div>
+            <h3 class="item-name">Nasi Goreng (Abang / Mhs)</h3>
+            <p class="item-desc">Pilihan nasi goreng gurih bumbu sedap khas abang-abang atau varian mahasiswa.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Nasgor Mahasiswa</span>
+                <span class="price-val">Rp 16.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Nasgor Abang</span>
+                <span class="price-val">Rp 17.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="fd-nasgor-mhs" data-name="Nasi Goreng Mahasiswa" data-price="16000" data-variant="Porsi">+ Mhs (16K)</button>
+            <button class="btn-add-order" data-id="fd-nasgor-abang" data-name="Nasi Goreng Abang" data-price="17000" data-variant="Porsi">+ Abang (17K)</button>
+          </div>
+        </div>
+
+        <div class="menu-item-card" data-category="food">
+          <div>
+            <div class="menu-card-top">
+              <span class="item-category-tag">Food</span>
+            </div>
+            <h3 class="item-name">Mie Goreng & Mie Rebus Telur</h3>
+            <p class="item-desc">Pilihan mie instan goreng atau kuah rebus gurih dengan tambahan telur utuh nikmat.</p>
+            <div class="item-pricing">
+              <div class="price-row">
+                <span class="price-label">Mie Goreng + Telur</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+              <div class="price-row">
+                <span class="price-label">Mie Rebus + Telur</span>
+                <span class="price-val">Rp 15.000</span>
+              </div>
+            </div>
+          </div>
+          <div class="menu-card-actions">
+            <button class="btn-add-order" data-id="fd-mie-goreng" data-name="Mie Goreng Telur" data-price="15000" data-variant="Goreng">+ Mie Grg (15K)</button>
+            <button class="btn-add-order" data-id="fd-mie-rebus" data-name="Mie Rebus Telur" data-price="15000" data-variant="Rebus">+ Mie Rebus (15K)</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- State Jika Pencarian Kosong -->
+      <div id="noMenuFound" class="no-menu-found">
+        <i class="fas fa-search"></i>
+        <h3>Menu Tidak Ditemukan</h3>
+        <p>Maaf, kata kunci yang Anda cari tidak sesuai dengan menu yang tersedia saat ini.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       DOKUMENTASI KUNJUNGAN & WAWANCARA UMKM
+       (SYARAT MUTLAK TUGAS PEMROGRAMAN WEB:
+        BUKTI FOTO DOKUMENTASI BERSAMA OWNER/PERWAKILAN)
+       ========================================== -->
+  <section class="section-padding doc-section" id="dokumentasi">
+    <div class="container">
+      <div class="section-header">
+        <div class="doc-badge-verified">
+          <i class="fas fa-check-double"></i> Terverifikasi Mitra UMKM Resmi
+        </div>
+        <h2 class="section-title">Dokumentasi & Bukti Kerjasama UMKM</h2>
+        <p class="section-desc">
+          Bagian ini memuat bukti autentik observasi lapangan, wawancara mendalam bersama pemilik/perwakilan <strong>Coffee by BaDjua</strong>, serta dokumentasi fisik menu sebagai syarat keabsahan Tugas Pemrograman Web.
+        </p>
+      </div>
+
+      <div class="doc-intro-box">
+        <div class="doc-intro-text">
+          <h3><i class="fas fa-handshake" style="color: var(--accent); margin-right: 8px;"></i> Kemitraan Digitalisasi UMKM</h3>
+          <p>Observasi dilakukan langsung di kedai Coffee by BaDjua untuk menganalisis kebutuhan sistem pemesanan online dan katalog digital.</p>
+        </div>
+        <div class="doc-badge-pill">
+          <i class="fas fa-calendar-alt"></i> Periode: Semester Ini
+        </div>
+      </div>
+
+      <!-- Galeri Foto Bukti Dokumentasi (Bisa Di-zoom via jQuery Modal) -->
+      <div class="doc-gallery-grid">
+
+        <!-- KARTU 1: MENU ASLI KEDAI -->
+        <div class="doc-card">
+          <div class="doc-img-frame lightbox-trigger" data-caption="Menu Fisik Resmi Coffee by BaDjua sebagai acuan basis data e-katalog">
+            <img src="assets/images/menu-badjua.jpg" alt="Menu Resmi Coffee by BaDjua">
+            <span class="doc-zoom-hint"><i class="fas fa-search-plus"></i> Klik untuk Perbesar</span>
+          </div>
+          <div class="doc-card-body">
+            <div>
+              <span class="doc-tag"><i class="fas fa-file-invoice"></i> Dokumen Bukti 1</span>
+              <h4>Daftar Menu Fisik Resmi BaDjua</h4>
+              <p>Foto menu asli yang diperoleh saat kunjungan, mencakup struktur harga resmi, jam operasional (09.00 - 23.00), dan kontak akun Instagram @badjuacoffee.</p>
+            </div>
+            <div class="doc-meta">
+              <span><i class="fas fa-check-circle" style="color: #2e7d32;"></i> Data Tervalidasi</span>
+              <span><i class="fas fa-tag"></i> 28 Menu Resmi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KARTU 2: FOTO PRODUK & BARISTA -->
+        <div class="doc-card">
+          <div class="doc-img-frame lightbox-trigger" data-caption="Racikan Latte Art dan Produk Andalan Barista Coffee by BaDjua">
+            <img src="assets/images/latte-art.jpg" alt="Racikan Barista BaDjua">
+            <span class="doc-zoom-hint"><i class="fas fa-search-plus"></i> Klik untuk Perbesar</span>
+          </div>
+          <div class="doc-card-body">
+            <div>
+              <span class="doc-tag"><i class="fas fa-coffee"></i> Dokumen Bukti 2</span>
+              <h4>Produk & Seni Racikan Kopi Barista</h4>
+              <p>Dokumentasi penyajian kopi barista Coffee by BaDjua dengan teknik latte art yang membuktikan kualitas cita rasa dan standar penyajian tinggi di kedai.</p>
+            </div>
+            <div class="doc-meta">
+              <span><i class="fas fa-camera"></i> Foto Lapangan</span>
+              <span><i class="fas fa-star" style="color: #fbc02d;"></i> Cita Rasa Teruji</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- KARTU 3: BUKTI WAWANCARA DENGAN OWNER/PERWAKILAN -->
+        <div class="doc-card">
+          <div class="doc-img-frame lightbox-trigger" data-caption="Wawancara Eksklusif Mahasiswa bersama Pemilik/Perwakilan Coffee by BaDjua">
+            <!-- Menampilkan foto yang diupload atau slot foto interaktif -->
+            <img id="ownerInterviewPhoto" src="assets/images/latte-art.jpg" alt="Wawancara dengan Owner Coffee by BaDjua">
+            <span class="doc-zoom-hint"><i class="fas fa-search-plus"></i> Klik untuk Perbesar</span>
+          </div>
+          <div class="doc-card-body">
+            <div>
+              <span class="doc-tag"><i class="fas fa-users"></i> Dokumen Bukti 3 (Syarat Utama)</span>
+              <h4>Wawancara Bersama Owner / Perwakilan Kedai</h4>
+              <p>Sesi wawancara terkait sejarah berdirinya kedai, tantangan operasional, penetapan harga terjangkau bagi mahasiswa, serta kebutuhan platform digital.</p>
+            </div>
+            
+            <!-- Fitur Tambahan: Input file interaktif bagi mahasiswa untuk mengganti/preview foto bersama owner -->
+            <div style="margin-top: 10px; padding: 10px; background: #fdfbf7; border-radius: 8px; border: 1px dashed var(--border-color);">
+              <label for="ownerPhotoInput" style="font-size: 0.78rem; font-weight: 600; color: var(--primary); display: block; margin-bottom: 5px; cursor: pointer;">
+                <i class="fas fa-upload"></i> Unggah / Ganti Foto Anda dengan Owner:
+              </label>
+              <input type="file" id="ownerPhotoInput" accept="image/*" style="font-size: 0.75rem; width: 100%;">
+            </div>
+
+            <div class="doc-meta" style="margin-top: 12px;">
+              <span><i class="fas fa-user-tie"></i> Owner / Pengelola</span>
+              <span><i class="fas fa-map-marker-alt"></i> Kedai BaDjua</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Ringkasan Hasil Wawancara Akademik -->
+      <div class="interview-summary-grid">
+        <div class="interview-card">
+          <h4><i class="fas fa-info-circle"></i> Profil & Identitas Bisnis UMKM</h4>
+          <ul class="interview-list">
+            <li><i class="fas fa-store"></i> <strong>Nama Usaha:</strong> Coffee by BaDjua</li>
+            <li><i class="fas fa-tag"></i> <strong>Kategori Bisnis:</strong> Makanan & Minuman (F&B) / Kedai Kopi Modern</li>
+            <li><i class="fas fa-clock"></i> <strong>Waktu Buka:</strong> Setiap Hari, 09.00 - 23.00 (Close order 22.30)</li>
+            <li><i class="fab fa-instagram"></i> <strong>Media Sosial:</strong> @badjuacoffee (Instagram Resmi)</li>
+            <li><i class="fas fa-bullseye"></i> <strong>Segmen Konsumen:</strong> Mahasiswa, Dosen, Pegawai, & Komunitas</li>
+          </ul>
+        </div>
+
+        <div class="interview-card">
+          <h4><i class="fas fa-clipboard-check"></i> Intisari Hasil Wawancara Pemilik</h4>
+          <ul class="interview-list">
+            <li><i class="fas fa-check"></i> <strong>Keunggulan Menu:</strong> "Badjua Coffee" menggunakan racikan espresso blend khusus yang ramah di lambung dan cocok dinikmati kapan saja.</li>
+            <li><i class="fas fa-check"></i> <strong>Fasilitas untuk Pelajar:</strong> Menyediakan ruangan yang nyaman untuk nugas, WiFi cepat, colokan di tiap meja, dan harga yang bersahabat.</li>
+            <li><i class="fas fa-check"></i> <strong>Kebutuhan Digital:</strong> Pemilik mengapresiasi pembuatan website ini sebagai sarana katalog online interaktif dan mempermudah pelanggan order via WhatsApp tanpa ribet.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ULASAN & TESTIMONI SECTION
+       ========================================== -->
+  <section class="section-padding" id="testimoni" style="background: #faf6f0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Kata Pengunjung Kami</span>
+        <h2 class="section-title">Apa Kata Mereka Tentang BaDjua?</h2>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item-card">
+          <div class="menu-card-top">
+            <span class="item-category-tag"><i class="fas fa-star" style="color: #ffb300;"></i> 5.0</span>
+          </div>
+          <p class="item-desc" style="font-style: italic;">"Kopi susunya pas banget, manisnya ga berlebihan. Paling suka nugas di sini karena wifinya kenceng dan colokan banyak. Nasi anak kosnya penyelamat kantong!"</p>
+          <div class="doc-meta">
+            <strong>Rian Pratama</strong>
+            <span>Mahasiswa Teknik</span>
+          </div>
+        </div>
+
+        <div class="menu-item-card">
+          <div class="menu-card-top">
+            <span class="item-category-tag"><i class="fas fa-star" style="color: #ffb300;"></i> 5.0</span>
+          </div>
+          <p class="item-desc" style="font-style: italic;">"Badjua Presso dan Pisang Nugget Cokelat Keju adalah kombinasi wajib tiap nongkrong malam. Baristanya ramah dan pelayanannya cepat."</p>
+          <div class="doc-meta">
+            <strong>Siti Nurhaliza</strong>
+            <span>Pengunjung Setia</span>
+          </div>
+        </div>
+
+        <div class="menu-item-card">
+          <div class="menu-card-top">
+            <span class="item-category-tag"><i class="fas fa-star" style="color: #ffb300;"></i> 5.0</span>
+          </div>
+          <p class="item-desc" style="font-style: italic;">"Tempatnya estetik dan tenang buat diskusi kelompok. Pilihan makanannya lengkap, jadi ga perlu pindah tempat kalau lapar."</p>
+          <div class="doc-meta">
+            <strong>Dimas Anggara</strong>
+            <span>Freelancer & Desainer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       LOKASI & KONTAK SECTION
+       ========================================== -->
+  <section class="section-padding contact-section" id="kontak">
+    <div class="container contact-grid">
+      <div class="contact-content">
+        <span class="section-subtitle">Kunjungi Kedai Kami</span>
+        <h2 class="section-title">Lokasi & Jam Operasional</h2>
+        <p class="section-desc">
+          Kami siap menyambut Anda setiap hari untuk menikmati waktu santai atau menyelesaikan tugas kuliah.
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Alamat Kedai</h4>
+              <p>Coffee by BaDjua (Area Kampus & Pusat Kota)</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Jam Layanan</h4>
+              <p>Setiap Hari: <strong>09.00 - 23.00</strong> (Pemesanan Terakhir 22.30)</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Instagram</h4>
+              <p><a href="https://instagram.com/badjuacoffee" target="_blank" style="color: var(--accent); font-weight: 600;">@badjuacoffee</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <!-- Google Map Embed Placeholder -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28587134375!2d106.75618197771746!3d-6.229569450379203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e49fe3feb5%3A0x6b10702410a5eb6!2sCoffee%20Shop!5e0!3m2!1sid!2sid!4v1680000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Coffee by BaDjua"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ORDER / SHOPPING CART DRAWER (JQUERY INTERACTIVE)
+       ========================================== -->
+  <div class="cart-drawer-backdrop" id="cartDrawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang Belanja">
+    <div class="cart-drawer-header">
+      <h3><i class="fas fa-shopping-basket"></i> Keranjang Pesanan</h3>
+      <button class="btn-close-cart" id="closeCartBtn" aria-label="Tutup Keranjang">&times;</button>
+    </div>
+
+    <div class="cart-items-container" id="cartItemsList">
+      <!-- Diisi secara dinamis melalui jQuery -->
+    </div>
+
+    <!-- State Ketika Kosong -->
+    <div class="cart-empty-state" id="cartEmptyState">
+      <i class="fas fa-coffee"></i>
+      <h4>Pesanan Masih Kosong</h4>
+      <p>Klik tombol <strong>+ Pesan</strong> pada menu untuk memilih hidangan favorit Anda.</p>
+    </div>
+
+    <!-- Bagian Form & Checkout WhatsApp -->
+    <div class="cart-drawer-footer" id="cartFooterContent" style="display: none;">
+      <div class="cart-form-group">
+        <label for="orderCustomerName"><i class="fas fa-user"></i> Nama Pemesan *</label>
+        <input type="text" id="orderCustomerName" class="cart-input" placeholder="Masukkan nama lengkap Anda">
+      </div>
+
+      <div class="cart-form-group">
+        <label for="orderTableNumber"><i class="fas fa-chair"></i> Nomor Meja / Bawa Pulang</label>
+        <input type="text" id="orderTableNumber" class="cart-input" placeholder="Contoh: Meja 05 / Take Away">
+      </div>
+
+      <div class="cart-form-group">
+        <label for="orderNotes"><i class="fas fa-sticky-note"></i> Catatan Khusus (Opsi)</label>
+        <input type="text" id="orderNotes" class="cart-input" placeholder="Contoh: Less sugar / Es dipisah">
+      </div>
+
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotalText">Rp 0</strong>
+      </div>
+      <div class="cart-summary-row">
+        <span>Biaya Pemesanan Web</span>
+        <strong style="color: #2e7d32;">GRATIS (Rp 0)</strong>
+      </div>
+      <div class="cart-summary-row cart-summary-total">
+        <span>Total Pembayaran:</span>
+        <strong id="cartTotalText" style="color: var(--accent);">Rp 0</strong>
+      </div>
+
+      <button class="btn-whatsapp-order" id="btnSubmitWhatsappOrder">
+        <i class="fab fa-whatsapp" style="font-size: 1.3rem;"></i> Kirim Pesanan via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       LIGHTBOX MODAL FOTO DOKUMENTASI (JQUERY)
+       ========================================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="btn-close-lightbox" id="btnCloseLightbox" aria-label="Tutup Preview">&times;</button>
+      <img src="" alt="Pratinjau Foto" class="lightbox-img" id="lightboxImage">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       TOAST NOTIFICATION (JQUERY TRIGGERED)
+       ========================================== -->
+  <div class="toast-box" id="toastNotification">
+    <i class="fas fa-check-circle" id="toastIcon"></i>
+    <span id="toastMessage">Menu berhasil ditambahkan!</span>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" title="Kembali ke atas" aria-label="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================
+       FOOTER & IDENTITAS TUGAS AKADEMIK
+       ========================================== -->
+  <div class="footer-academic-banner">
+    <div class="container academic-box">
+      <div class="academic-info">
+        <h4><i class="fas fa-graduation-cap"></i> Tugas Pemrograman Web - Implementasi HTML & jQuery</h4>
+        <p>Proyek pengembangan website profil & e-katalog UMKM terintegrasi GitHub & Online.</p>
+      </div>
+      <div class="student-badges">
+        <div class="student-chip"><i class="fas fa-code"></i> HTML5 & CSS3 Responsive</div>
+        <div class="student-chip"><i class="fab fa-js"></i> jQuery 3.7.1</div>
+        <div class="student-chip"><i class="fab fa-github"></i> Terhubung ke GitHub</div>
+        <div class="student-chip"><i class="fas fa-globe"></i> Siap GitHub Pages</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="logo-icon" style="background: var(--accent); color: #fff;">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="brand-text">
+              <h3 style="color: #fff;">Coffee by BaDjua</h3>
+              <span style="color: var(--accent);">Artisan Coffee & Kitchen</span>
+            </div>
+          </div>
+          <p>
+            Kedai kopi dan ruang temu nyaman dengan ragam pilihan menu autentik berharga ramah mahasiswa. Buka setiap hari pukul 09.00 - 23.00.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigasi Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#tentang">Tentang BaDjua</a></li>
+            <li><a href="#menu">Daftar Menu</a></li>
+            <li><a href="#dokumentasi">Bukti Wawancara UMKM</a></li>
+            <li><a href="#kontak">Lokasi Kedai</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Koneksi & Sosial</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com/badjuacoffee" target="_blank"><i class="fab fa-instagram"></i> @badjuacoffee</a></li>
+            <li><a href="javascript:void(0)" id="footerOrderLink"><i class="fab fa-whatsapp"></i> Order WhatsApp</a></li>
+            <li><a href="#dokumentasi"><i class="fas fa-id-card"></i> Bukti Dokumentasi</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Coffee by BaDjua. Dibuat untuk pemenuhan Tugas Pemrograman Web. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       SCRIPTS: JQUERY & LOGIKA UTAMA
+       ========================================== -->
+  <!-- Local jQuery with fallback to CDN -->
+  <script src="js/jquery.min.js"></script>
+  <script>
+    if (typeof jQuery == 'undefined') {
+      document.write('<script src="https://code.jquery.com/jquery-3.7.1.min.js"><\/script>');
+    }
+  </script>
+  <!-- Custom jQuery Logic -->
+  <script src="js/main.js"></script>
+
+  <script>
+    // Quick trigger footer order link
+    $('#footerOrderLink').on('click', function() {
+      $('#cartToggleBtn').trigger('click');
+    });
+  </script>
+</body>
+</html>
